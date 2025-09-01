@@ -196,12 +196,22 @@ footer a {
         grid-template-columns: 1fr;
     }
     
-    footer a {
-        display: block;
-        margin: 5px 0;
+    /* Keep footer links horizontal on mobile */
+    footer nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        line-height: 1.6;
     }
     
+    footer a {
+        margin: 0 5px;
+        white-space: nowrap;
+    }
+    
+    /* Hide separator pipes on mobile for cleaner look */
     footer nav {
-        line-height: 2;
+        font-size: 0.9em;
     }
 }
