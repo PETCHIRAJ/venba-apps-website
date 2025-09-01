@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background rounded square -->
+  <rect x="10" y="10" width="80" height="80" rx="20" ry="20" fill="#3498db"/>
+  
+  <!-- Letter V in white -->
+  <text x="50" y="50" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="central">V</text>
+</svg>
