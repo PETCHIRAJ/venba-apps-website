@@ -26,6 +26,15 @@ header {
     margin-bottom: 40px;
 }
 
+.brand-logo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
@@ -194,6 +203,11 @@ footer a {
     
     .app-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .brand-logo {
+        width: 80px;
+        height: 80px;
     }
     
     /* Keep footer links horizontal on mobile */
