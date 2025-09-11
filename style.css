@@ -88,6 +88,14 @@ section {
     background: #f9f9f9;
 }
 
+.app-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .app-card h3 {
     margin-top: 0;
     color: #2c3e50;

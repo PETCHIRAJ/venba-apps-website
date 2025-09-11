@@ -77,35 +77,16 @@
         </div>
 
         <section>
-            <h2>Our Approach to Privacy</h2>
-            <p>Privacy Expense Manager is built on a fundamental principle: <strong>your financial data is yours alone</strong>.</p>
+            <h2>What We Don't Collect</h2>
             
-            <div class="privacy-feature">
-                <strong>100% Local Architecture</strong><br>
-                Privacy Expense Manager operates entirely on your device. There are no servers, no cloud infrastructure, and no way for us to access your data. This isn't a feature we can turn off - it's how the app is built from the ground up.
-            </div>
-        </section>
-
-        <section>
-            <h2>Data Collection</h2>
-            
-            <div class="no-collect">
-                <strong>🚫 Your Financial Data Stays Private</strong><br>
-                All expense information stays on your device. We have no analytics to track you with, and no way to see your financial information. Only anonymous crash reports are collected to improve app stability.
-            </div>
-
             <table class="data-table">
                 <tr>
                     <td>Personal Information</td>
                     <td><span class="icon">❌</span> Not collected</td>
                 </tr>
                 <tr>
-                    <td>Email Address</td>
-                    <td><span class="icon">❌</span> Not required or collected</td>
-                </tr>
-                <tr>
-                    <td>Account Registration</td>
-                    <td><span class="icon">❌</span> No accounts needed</td>
+                    <td>Email & Accounts</td>
+                    <td><span class="icon">❌</span> Not required</td>
                 </tr>
                 <tr>
                     <td>Analytics/Tracking</td>
@@ -116,135 +97,59 @@
                     <td><span class="icon">❌</span> No ads ever</td>
                 </tr>
                 <tr>
-                    <td>Crash Reports</td>
-                    <td><span class="icon">⚠️</span> Anonymous crash data only</td>
-                </tr>
-                <tr>
                     <td>Your Expenses</td>
                     <td><span class="icon">✅</span> Stored locally only</td>
                 </tr>
+                <tr>
+                    <td>Crash Reports</td>
+                    <td><span class="icon">⚠️</span> Anonymous only</td>
+                </tr>
             </table>
-        </section>
 
-        <section>
-            <h2>Anonymous Crash Reporting</h2>
-            <p>To improve app stability, we collect anonymous crash reports through Firebase Crashlytics. These reports:</p>
-            <ul>
-                <li>Contain NO personal information or expense data</li>
-                <li>Include only technical details about the crash (stack traces, device model, OS version)</li>
-                <li>Cannot be traced back to you</li>
-                <li>Help us fix bugs and improve the app for everyone</li>
-            </ul>
-            <p><strong>Important:</strong> Your expense data is NEVER included in crash reports. Only technical error information is collected to help us improve app stability.</p>
-        </section>
-
-        <section>
-            <h2>Data Storage & Security</h2>
-            
-            <div class="privacy-feature">
-                <h3>SQLCipher Encryption</h3>
-                <p>All your expense data is protected with SQLCipher encryption. Your data is encrypted at rest on your device, making it unreadable even if someone gains physical access to your phone.</p>
+            <div class="no-collect">
+                <strong>🚫 100% Local Architecture</strong><br>
+                All data stays on your device with SQLCipher encryption. No servers, no cloud infrastructure, no way for us to access your data.
             </div>
-
-            <ul>
-                <li><strong>Storage Location:</strong> Your device's secure app storage only</li>
-                <li><strong>Encryption:</strong> SQLCipher database encryption</li>
-                <li><strong>Backup:</strong> Standard Android/iOS device backups (encrypted)</li>
-                <li><strong>Access:</strong> Only you, through the app on your device</li>
-            </ul>
         </section>
 
         <section>
-            <h2>Optional Premium Features</h2>
+            <h2>What We Do Collect</h2>
+            <p><strong>Anonymous Crash Reports Only:</strong> Technical details to fix bugs (no personal data or expenses included).</p>
             
             <div class="premium-info">
-                <h3>💎 Premium Users Only (Optional)</h3>
-                <p>Premium users can optionally choose to:</p>
+                <h3>💎 Optional Premium Features</h3>
                 <ul>
-                    <li><strong>Google Drive Backup:</strong> Your data is encrypted before upload and remains encrypted in your personal Google Drive. We never have access to this backup.</li>
-                    <li><strong>CSV Export:</strong> Export your expenses for use in spreadsheets. This is entirely user-initiated and controlled.</li>
+                    <li><strong>Google Drive Backup:</strong> Your choice, encrypted, we never access it</li>
+                    <li><strong>CSV Export:</strong> User-initiated only</li>
                 </ul>
-                <p><strong>Important:</strong> These features are 100% optional. You can use premium features without ever enabling cloud backup.</p>
             </div>
         </section>
 
         <section>
-            <h2>Data Sharing</h2>
-            
-            <div class="no-collect">
-                <strong>We CAN'T Share What We Don't Have</strong><br>
-                Since your data never reaches our servers (we don't have servers), it's technically impossible for us to share, sell, or leak your information. Your expense data exists only on your device.
-            </div>
-        </section>
-
-        <section>
-            <h2>Permissions Explained</h2>
-            
-            <p>Privacy Expense Manager requests only essential permissions:</p>
-            
-            <table class="data-table">
-                <tr>
-                    <td>Storage</td>
-                    <td>To save your expense database locally on your device</td>
-                </tr>
-                <tr>
-                    <td>Internet (Premium only)</td>
-                    <td>Only for optional Google Drive backup if you explicitly enable it</td>
-                </tr>
-            </table>
-            
-            <p>We do <strong>NOT</strong> request permissions for:</p>
+            <h2>App Permissions</h2>
             <ul>
-                <li>Camera or Photos</li>
-                <li>Contacts</li>
-                <li>Location</li>
-                <li>Microphone</li>
-                <li>Phone calls or SMS</li>
+                <li><strong>Storage:</strong> Save your encrypted database locally</li>
+                <li><strong>Internet (Premium only):</strong> For optional Google Drive backup</li>
+            </ul>
+            <p>We <strong>DON'T</strong> request: Camera, Contacts, Location, Microphone, Phone, SMS</p>
+        </section>
+
+        <section>
+            <h2>Your Control</h2>
+            <ul>
+                <li>✅ <strong>Complete Privacy:</strong> Data never leaves your device</li>
+                <li>✅ <strong>Easy Deletion:</strong> Uninstall removes everything</li>
+                <li>✅ <strong>No Accounts:</strong> No registration required</li>
+                <li>✅ <strong>No Tracking:</strong> Zero analytics or monitoring</li>
             </ul>
         </section>
 
         <section>
-            <h2>Data Deletion</h2>
+            <h2>Contact & Updates</h2>
+            <p><strong>Email:</strong> contact.venbaapps@gmail.com<br>
+            <strong>Website:</strong> <a href="https://apps.venba.dev">apps.venba.dev</a></p>
             
-            <div class="privacy-feature">
-                <strong>Complete Deletion is Simple</strong><br>
-                Uninstalling Privacy Expense Manager completely removes all data from your device. There are no cloud copies, no server backups, and no traces left behind (unless you explicitly created a Google Drive backup, which you control).
-            </div>
-        </section>
-
-        <section>
-            <h2>Children's Privacy</h2>
-            <p>Privacy Expense Manager does not knowingly collect any information from anyone, including children. The app works entirely offline and requires no personal information to function.</p>
-        </section>
-
-        <section>
-            <h2>Changes to This Policy</h2>
-            <p>Our commitment to keeping your data on your device will never change. Any updates to this policy will be for clarification only. The core promise remains: your financial data stays on your device.</p>
-        </section>
-
-        <section>
-            <h2>Open Source Commitment</h2>
-            <p>We believe in transparency. Key components of Privacy Expense Manager may be open-sourced in the future so you can verify our privacy claims yourself.</p>
-        </section>
-
-        <section>
-            <h2>Contact Us</h2>
-            <p>If you have questions about this privacy policy or how Privacy Expense Manager protects your data:</p>
-            <p>
-                <strong>Email:</strong> contact.venbaapps@gmail.com<br>
-                <strong>Website:</strong> <a href="https://apps.venba.dev">apps.venba.dev</a>
-            </p>
-        </section>
-
-        <section>
-            <h2>Your Rights</h2>
-            <p>With Privacy Expense Manager, you have complete control:</p>
-            <ul>
-                <li>✅ <strong>Right to Privacy:</strong> Your data never leaves your device</li>
-                <li>✅ <strong>Right to Delete:</strong> Uninstall the app to delete everything</li>
-                <li>✅ <strong>Right to Control:</strong> No accounts, no tracking, no compromises</li>
-                <li>✅ <strong>Right to Transparency:</strong> This policy tells you exactly how the app works</li>
-            </ul>
+            <p>Our core promise will never change: your financial data stays on your device. Updates will only clarify this commitment.</p>
         </section>
 
         <div class="privacy-highlight" style="background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);">
