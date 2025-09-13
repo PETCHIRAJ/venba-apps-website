@@ -116,6 +116,12 @@ section {
     color: #e67e22;
 }
 
+/* Coming Soon Card */
+.placeholder-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
 .available {
     color: #27ae60;
 }
