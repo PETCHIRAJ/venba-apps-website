@@ -138,6 +138,23 @@ a:hover {
     text-decoration: underline;
 }
 
+.app-store-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.app-store-link:hover {
+    text-decoration: none;
+}
+
+.app-store-link:hover .status {
+    background-color: #27ae60;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
 footer {
     margin-top: 60px;
     padding-top: 30px;
