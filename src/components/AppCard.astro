@@ -38,12 +38,12 @@ const { icon, name, category, features, description, storeLink, status, isPlaceh
     {storeLink ? (
         <a href={storeLink} target="_blank" rel="noopener noreferrer" class="app-store-link">
             <p class={`status ${status}`}>
-                {status === 'available' ? 'Available on Google Play Store' : 'In Development'}
+                {status === 'available' ? 'Available on Google Play Store' : 'Coming Soon'}
             </p>
         </a>
     ) : (
         <p class={`status ${status}`}>
-            {status === 'available' ? 'Available on Google Play Store' : 'In Development'}
+            {status === 'available' ? 'Available on Google Play Store' : 'Coming Soon'}
         </p>
     )}
 </div>

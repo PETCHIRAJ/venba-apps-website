@@ -1,4 +1,4 @@
-/* Simple, clean styling for Venba Apps website */
+/* Clean, simple styling for Venba Apps website */
 
 * {
     margin: 0;
@@ -8,9 +8,9 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background: #fff;
+    line-height: 1.7;
+    color: #2c3e50;
+    background: #fafafa;
 }
 
 .container {
@@ -21,41 +21,63 @@ body {
 
 header {
     text-align: center;
-    padding: 40px 0;
-    border-bottom: 1px solid #eee;
-    margin-bottom: 40px;
+    padding: 50px 0 40px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #e5e7eb;
 }
 
 .brand-logo {
-    width: 180px;
-    height: 180px;
-    margin: 0 auto 20px;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 25px;
     display: block;
     border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+    transform: scale(1.05);
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 12px;
     color: #2c3e50;
+    letter-spacing: -0.5px;
 }
 
 h2 {
-    font-size: 1.8em;
-    margin: 30px 0 20px;
-    color: #34495e;
+    font-size: 1.7em;
+    font-weight: 600;
+    margin: 45px 0 25px;
+    color: #2c3e50;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+section.apps h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: #3498db;
 }
 
 h3 {
-    font-size: 1.3em;
-    margin: 20px 0 10px;
-    color: #34495e;
+    font-size: 1.35em;
+    font-weight: 600;
+    margin: 20px 0 12px;
+    color: #2c3e50;
 }
 
 .tagline {
-    font-size: 1.2em;
+    font-size: 1.15em;
     color: #7f8c8d;
+    font-weight: 400;
 }
 
 .meta {
@@ -65,55 +87,93 @@ h3 {
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+}
+
+section p {
+    font-size: 1.05em;
+    color: #5d6d7e;
+    line-height: 1.8;
 }
 
 .hero {
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.2em;
     padding: 20px 0;
+    margin-bottom: 40px;
+    color: #5d6d7e;
 }
 
 .app-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
 }
 
 .app-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    background: #f9f9f9;
+    border: none;
+    border-radius: 12px;
+    padding: 28px;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.app-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #3498db, #2ecc71);
+}
+
+.app-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
 .app-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 12px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .app-card h3 {
     margin-top: 0;
+    margin-bottom: 8px;
     color: #2c3e50;
+    font-size: 1.4em;
 }
 
 .category {
-    color: #7f8c8d;
-    font-size: 0.9em;
-    margin-bottom: 10px;
+    color: #3498db;
+    font-size: 0.85em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
 }
 
 .status {
-    margin-top: 15px;
-    font-weight: bold;
+    margin-top: 20px;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 0.95em;
 }
 
 .coming-soon {
     color: #e67e22;
+    background: #fef5e7;
+    border: 1px solid #f0b27a;
 }
 
 /* Coming Soon Card */
@@ -124,6 +184,8 @@ section {
 
 .available {
     color: #27ae60;
+    background: #eafaf1;
+    border: 1px solid #82e0aa;
 }
 
 ul {
@@ -132,33 +194,42 @@ ul {
 }
 
 li {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    line-height: 1.6;
 }
 
 a {
     color: #3498db;
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 a:hover {
+    color: #2980b9;
     text-decoration: underline;
 }
 
 .app-store-link {
-    display: inline-block;
+    display: block;
     text-decoration: none;
+    margin-top: 10px;
 }
 
 .app-store-link:hover {
     text-decoration: none;
 }
 
-.app-store-link:hover .status {
-    background-color: #27ae60;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 6px;
+.app-store-link .status {
     transition: all 0.3s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.app-store-link:hover .status.available {
+    background: #27ae60;
+    color: white;
+    border-color: #27ae60;
+    transform: scale(1.02);
 }
 
 footer {
