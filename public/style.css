@@ -289,6 +289,73 @@ footer a {
     padding-bottom: 10px;
 }
 
+/* Hero improvements */
+.hero-text {
+    font-size: 1.35em;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #34495e;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Remove h2 from apps section for cleaner look */
+.apps {
+    padding-top: 0;
+}
+
+/* About-Contact combined section */
+.about-contact {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 2px solid #ecf0f1;
+}
+
+.about-content {
+    margin-bottom: 40px;
+}
+
+.about-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    max-width: 700px;
+}
+
+/* Contact links styling */
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #5d6d7e;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 8px 0;
+}
+
+.contact-link:hover {
+    color: #3498db;
+    transform: translateX(5px);
+}
+
+.contact-icon {
+    font-size: 1.2em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
 /* Mobile Responsive */
 @media (max-width: 600px) {
     h1 {
@@ -329,5 +396,14 @@ footer a {
     /* Hide separator pipes on mobile for cleaner look */
     footer nav {
         font-size: 0.9em;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-text br {
+        display: none;
     }
 }

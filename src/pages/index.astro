@@ -10,11 +10,10 @@ import appsData from '../data/apps.json';
     <Header />
 
     <section class="hero">
-        <p>I build mobile applications that solve real problems with simple, intuitive designs.</p>
+        <p class="hero-text">I build mobile applications that solve real problems<br/>with simple, intuitive designs.</p>
     </section>
 
     <section class="apps">
-        <h2>My Apps</h2>
         <div class="app-grid">
             {appsData.apps.map((app) => (
                 <AppCard
@@ -31,18 +30,27 @@ import appsData from '../data/apps.json';
         </div>
     </section>
 
-    <section class="about">
-        <h2>About</h2>
-        <p>I'm a solo developer focused on creating mobile applications that make daily tasks easier. I believe in simple design, user privacy, and practical functionality.</p>
-        <p>My apps feature local language support and are designed to work seamlessly across different regions and cultures.</p>
-    </section>
+    <section class="about-contact">
+        <div class="about-content">
+            <h2>About the Developer</h2>
+            <p>Solo developer focused on creating mobile applications that make daily tasks easier. I believe in simple design, user privacy, and practical functionality.</p>
+            <p>My apps feature local language support and are designed to work seamlessly across different regions and cultures.</p>
+        </div>
 
-    <section class="contact">
-        <h2>Get in Touch</h2>
-        <p>Have questions or feedback? I'd love to hear from you!</p>
-        <p>Email: <a href="mailto:contact.venbaapps@gmail.com">contact.venbaapps@gmail.com</a></p>
-        <p>Play Store: <a href="https://play.google.com/store/apps/dev?id=8464608221563186460" target="_blank">View all apps on Google Play</a></p>
-        <p>Blog: <a href="https://blog.venba.dev" target="_blank">Read my thoughts on tech and finance</a></p>
+        <div class="contact-links">
+            <a href="mailto:contact.venbaapps@gmail.com" class="contact-link">
+                <span class="contact-icon">✉</span>
+                <span>contact.venbaapps@gmail.com</span>
+            </a>
+            <a href="https://play.google.com/store/apps/dev?id=8464608221563186460" target="_blank" class="contact-link">
+                <span class="contact-icon">📱</span>
+                <span>Google Play Store</span>
+            </a>
+            <a href="https://blog.venba.dev" target="_blank" class="contact-link">
+                <span class="contact-icon">📝</span>
+                <span>Tech & Finance Blog</span>
+            </a>
+        </div>
     </section>
 
     <Footer />
