@@ -1,0 +1,44 @@
+---
+export interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Venba Apps - Simple, Useful Mobile Applications',
+  description = 'Building simple and useful mobile apps for everyday needs. Finance, productivity, education, and more.'
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+    <link rel="canonical" href={`https://apps.venba.dev${Astro.url.pathname}`}>
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content="Privacy-focused mobile apps for expense tracking, financial planning, and everyday productivity.">
+    <meta property="og:image" content="https://apps.venba.dev/images/brand_icon.png">
+    <meta property="og:url" content="https://apps.venba.dev">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={title}>
+    <meta name="twitter:description" content="Privacy-focused mobile apps for expense tracking, financial planning, and everyday productivity.">
+    <meta name="twitter:image" content="https://apps.venba.dev/images/brand_icon.png">
+
+    <link rel="icon" type="image/png" href="/images/brand_icon.png">
+    <link rel="apple-touch-icon" href="/images/brand_icon.png">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <slot />
+    </div>
+</body>
+</html>

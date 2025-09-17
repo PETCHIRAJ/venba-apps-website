@@ -1,0 +1,157 @@
+---
+import Layout from '../components/Layout.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Privacy Policy - Privacy Expense Manager" description="Privacy Policy for Privacy Expense Manager - Your expenses stay on your device. Zero tracking, no ads, complete privacy.">
+    <style>
+        .privacy-highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .privacy-highlight h2 {
+            color: white;
+            margin: 0 0 10px 0;
+        }
+        .privacy-feature {
+            background: #f0f4f8;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+        }
+        .no-collect {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #4caf50;
+            margin: 15px 0;
+        }
+        .premium-info {
+            background: #fff3e0;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ff9800;
+            margin: 15px 0;
+        }
+    </style>
+
+    <header>
+        <h1>Privacy Expense Manager - Privacy Policy</h1>
+        <p class="meta">Last Updated: September 11, 2024 | Version 1.0</p>
+    </header>
+
+    <div class="privacy-highlight">
+        <h2>🔒 Your Privacy is Our Core Value</h2>
+        <p><strong>100% Offline • Zero Tracking • No Ads • Complete Privacy</strong></p>
+    </div>
+
+    <section>
+        <h2>The Simple Truth</h2>
+        <div class="privacy-feature">
+            <p><strong>Your expenses stay on YOUR device. Period.</strong></p>
+            <p>Privacy Expense Manager is built with one principle: your financial data is yours alone. We don't collect it, we don't see it, we don't want it.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>What We DON'T Collect</h2>
+        <div class="no-collect">
+            <ul>
+                <li>❌ <strong>No expense data</strong> - All your expenses stay on your device</li>
+                <li>❌ <strong>No personal information</strong> - We don't know who you are</li>
+                <li>❌ <strong>No analytics</strong> - Zero tracking of your app usage</li>
+                <li>❌ <strong>No advertisements</strong> - No ad networks, no tracking pixels</li>
+                <li>❌ <strong>No cloud storage</strong> - Your data never leaves your device</li>
+                <li>❌ <strong>No account required</strong> - Use the app without any registration</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>How Your Data is Protected</h2>
+        <div class="privacy-feature">
+            <h3>🔐 Encrypted Local Storage</h3>
+            <p>All your expense data is stored locally on your device using Android's secure storage system. It's encrypted and accessible only to you.</p>
+        </div>
+
+        <div class="privacy-feature">
+            <h3>📱 Device-Only Access</h3>
+            <p>Your data never leaves your device. There's no server, no cloud, no backend - just your phone and your data.</p>
+        </div>
+
+        <div class="privacy-feature">
+            <h3>🔄 Backup Control</h3>
+            <p>You control your backups. Export your data as CSV or backup to your own Google Drive (Premium feature). We never see these backups.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Premium Version</h2>
+        <div class="premium-info">
+            <p><strong>Privacy-First Premium Features:</strong></p>
+            <ul>
+                <li>✅ No ads (we never had them anyway!)</li>
+                <li>✅ Backup to YOUR Google Drive (optional)</li>
+                <li>✅ Advanced features, same privacy</li>
+                <li>✅ Support independent development</li>
+            </ul>
+            <p>Premium purchase is handled by Google Play. We only verify if you've purchased premium - we don't collect any personal information.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Third-Party Services</h2>
+        <p>We use minimal third-party services:</p>
+        <ul>
+            <li><strong>Google Play Services:</strong> Only for premium purchase verification</li>
+            <li><strong>Google Drive API:</strong> Only if YOU choose to backup (Premium feature)</li>
+        </ul>
+        <p>These services have their own privacy policies, but they cannot access your expense data unless you explicitly choose to use them.</p>
+    </section>
+
+    <section>
+        <h2>Your Rights</h2>
+        <p>You have complete control:</p>
+        <ul>
+            <li>✅ Delete all data anytime from app settings</li>
+            <li>✅ Export all your data as CSV</li>
+            <li>✅ Uninstall the app to remove everything</li>
+            <li>✅ Use the app completely offline</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Children's Privacy</h2>
+        <p>Privacy Expense Manager can be safely used by anyone. Since we don't collect any data, there are no privacy concerns for users of any age.</p>
+    </section>
+
+    <section>
+        <h2>Changes to This Policy</h2>
+        <p>If we ever update this policy, we'll notify you through the app. But our core promise remains: your financial data stays on your device.</p>
+    </section>
+
+    <section>
+        <h2>Open Source Commitment</h2>
+        <div class="privacy-feature">
+            <p>We believe in transparency. While the app isn't open source yet, we're committed to clear, honest communication about how your data is handled.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <p>Questions about privacy? Suggestions for improvement?</p>
+        <p>Email: <a href="mailto:contact.venbaapps@gmail.com">contact.venbaapps@gmail.com</a></p>
+        <p>We typically respond within 48 hours.</p>
+    </section>
+
+    <div class="privacy-highlight" style="margin-top: 40px;">
+        <p><strong>Bottom Line:</strong> Your expenses are yours. We can't see them, access them, or share them because they never leave your device. That's not a feature - that's a promise.</p>
+    </div>
+
+    <Footer />
+</Layout>

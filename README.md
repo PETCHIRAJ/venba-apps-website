@@ -1,23 +1,43 @@
-# Venba Apps Website
+# Astro Starter Kit: Minimal
 
-Official website for Venba Apps mobile applications.
+```sh
+npm create astro@latest -- --template minimal
+```
 
-## Website
-- Live at: https://apps.venba.dev
-- Hosted on GitHub Pages
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## Pages
-- Home - App portfolio
-- Privacy Policy - Privacy information for all apps
-- Terms of Service - Terms for app usage
-- Data Deletion - Instructions for data deletion requests
+## 🚀 Project Structure
 
-## Contact
-- Email: contact.venbaapps@gmail.com
+Inside of your Astro project, you'll see the following folders and files:
 
-## Apps
-- Simple Expense Manager (Coming Soon)
-- Home Loan Advisor (Coming Soon)
+```text
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-## License
-© 2025 Venba Apps. All rights reserved.
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+
+Any static assets, like images, can be placed in the `public/` directory.
+
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

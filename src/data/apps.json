@@ -1,0 +1,30 @@
+{
+  "apps": [
+    {
+      "id": "privacy-expense-manager",
+      "name": "Privacy Expense Manager",
+      "category": "Finance",
+      "icon": "/images/privacy-expense-manager-icon.png",
+      "description": "Privacy-first expense tracking:",
+      "features": [
+        "🔒 Encrypted storage",
+        "⚡ 3-tap quick entry",
+        "📱 100% offline",
+        "☁️ Optional cloud backup (Coming soon)"
+      ],
+      "storeLink": "https://play.google.com/store/apps/details?id=com.venba.privacy_expense_manager",
+      "status": "available"
+    },
+    {
+      "id": "coming-soon",
+      "name": "More Apps Coming Soon",
+      "category": "Finance & Productivity",
+      "icon": "",
+      "description": "Working on exciting new apps to simplify your daily life. Stay tuned for updates!",
+      "features": [],
+      "storeLink": null,
+      "status": "coming-soon",
+      "isPlaceholder": true
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "venba-apps-website",
+  "type": "module",
+  "version": "2.0.0",
+  "description": "Venba Apps website built with Astro",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "astro": "^5.13.7",
+    "typescript": "^5.9.2"
+  }
+}

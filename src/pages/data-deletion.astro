@@ -1,0 +1,76 @@
+---
+import Layout from '../components/Layout.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Data Deletion Request - Venba Apps" description="Request deletion of your data from Venba Apps">
+    <link rel="stylesheet" href="/data-deletion-styles.css">
+    <header>
+        <h1>Data Deletion Request</h1>
+        <p class="tagline">I respect your privacy and your right to control your data</p>
+    </header>
+
+    <section>
+        <h2>How to Delete Your Data</h2>
+        <p>Choose the appropriate method based on your data type:</p>
+    </section>
+
+    <section class="deletion-type">
+        <h3>📱 For Local Data (Data Stored on Your Device)</h3>
+        <p>Most of my apps store data locally on your device only. To delete this data:</p>
+
+        <div class="method-box">
+            <h4>Method 1: Clear App Data</h4>
+            <ol>
+                <li>Go to your device <strong>Settings</strong></li>
+                <li>Navigate to <strong>Apps</strong> or <strong>Application Manager</strong></li>
+                <li>Find and select my app (e.g., Simple Expense Manager)</li>
+                <li>Tap <strong>"Storage"</strong></li>
+                <li>Tap <strong>"Clear Data"</strong> or <strong>"Clear Storage"</strong></li>
+            </ol>
+        </div>
+
+        <div class="method-box">
+            <h4>Method 2: Uninstall the App</h4>
+            <p>Simply uninstalling the app will remove all local data associated with it.</p>
+        </div>
+    </section>
+
+    <section class="deletion-type">
+        <h3>☁️ For Server Data (Analytics, Account Data, etc.)</h3>
+        <p>To delete data I may have on servers (analytics, crash reports, or account data if applicable):</p>
+
+        <div class="request-box">
+            <h4>Submit a Deletion Request</h4>
+            <p>Click the button below to send me a pre-formatted email request:</p>
+
+            <a href="mailto:contact.venbaapps@gmail.com?subject=Data%20Deletion%20Request&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20deletion%20of%20my%20data.%0A%0AApp%20Name%3A%20%5BPlease%20specify%5D%0A%0AYour%20Email%20Address%3A%20%5BRequired%5D%0A%0ADevice%20Type%3A%20%5BAndroid%20%2F%20iOS%5D%0A%0AAdditional%20Information%20(optional)%3A%20%0A%0AThank%20you."
+               class="button-primary">
+                Send Deletion Request Email
+            </a>
+
+            <div class="info-note">
+                <p><strong>What happens next:</strong></p>
+                <p>Your data will be deleted within 30 days and you'll receive confirmation via email.</p>
+            </div>
+        </div>
+
+        <div class="manual-request">
+            <h4>Or Email Me Directly</h4>
+            <p>Send your request to: <a href="mailto:contact.venbaapps@gmail.com">contact.venbaapps@gmail.com</a></p>
+            <p>Please include:</p>
+            <ul>
+                <li><strong>Your email address</strong> (required for identification)</li>
+                <li>App name you're using</li>
+                <li>Device type (Android/iOS)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Questions?</h2>
+        <p>If you have any questions about data deletion, please email me at <a href="mailto:contact.venbaapps@gmail.com">contact.venbaapps@gmail.com</a></p>
+    </section>
+
+    <Footer />
+</Layout>

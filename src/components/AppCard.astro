@@ -1,0 +1,49 @@
+---
+export interface Props {
+  icon: string;
+  name: string;
+  category: string;
+  features?: string[];
+  description?: string;
+  storeLink?: string | null;
+  status: 'available' | 'coming-soon';
+  isPlaceholder?: boolean;
+}
+
+const { icon, name, category, features, description, storeLink, status, isPlaceholder = false } = Astro.props;
+---
+
+<div class="app-card">
+    {isPlaceholder ? (
+        <div class="placeholder-icon">🚀</div>
+    ) : (
+        <img src={icon} alt={name} class="app-icon">
+    )}
+    <h3>{name}</h3>
+    <p class="category">{category}</p>
+
+    {description && <p>{description}</p>}
+
+    {features && features.length > 0 && (
+        <p>
+            {features.map((feature, index) => (
+                <Fragment key={index}>
+                    {feature}
+                    {index < features.length - 1 && <br />}
+                </Fragment>
+            ))}
+        </p>
+    )}
+
+    {storeLink ? (
+        <a href={storeLink} target="_blank" rel="noopener noreferrer" class="app-store-link">
+            <p class={`status ${status}`}>
+                {status === 'available' ? 'Available on Google Play Store' : 'In Development'}
+            </p>
+        </a>
+    ) : (
+        <p class={`status ${status}`}>
+            {status === 'available' ? 'Available on Google Play Store' : 'In Development'}
+        </p>
+    )}
+</div>
