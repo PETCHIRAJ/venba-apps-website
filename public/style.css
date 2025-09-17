@@ -232,6 +232,25 @@ a:hover {
     transform: scale(1.02);
 }
 
+/* Feature list styling */
+.features-list {
+    margin: 15px 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+    color: #5d6d7e;
+}
+
+.feature-icon {
+    color: #3498db;
+    flex-shrink: 0;
+}
+
 footer {
     margin-top: 60px;
     padding-top: 30px;

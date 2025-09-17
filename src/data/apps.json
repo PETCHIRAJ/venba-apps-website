@@ -7,10 +7,10 @@
       "icon": "/images/privacy-expense-manager-icon.png",
       "description": "Privacy-first expense tracking:",
       "features": [
-        "🔒 Encrypted storage",
-        "⚡ 3-tap quick entry",
-        "📱 100% offline",
-        "☁️ Optional cloud backup (Coming soon)"
+        "Encrypted storage",
+        "3-tap quick entry",
+        "100% offline",
+        "Google Drive backup"
       ],
       "storeLink": "https://play.google.com/store/apps/details?id=com.venba.privacy_expense_manager",
       "status": "available"

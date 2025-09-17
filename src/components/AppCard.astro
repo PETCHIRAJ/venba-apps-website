@@ -1,4 +1,6 @@
 ---
+import { Lock, Zap, Smartphone, Cloud } from 'lucide-astro';
+
 export interface Props {
   icon: string;
   name: string;
@@ -11,6 +13,15 @@ export interface Props {
 }
 
 const { icon, name, category, features, description, storeLink, status, isPlaceholder = false } = Astro.props;
+
+// Map feature text to icons
+const getFeatureIcon = (feature: string) => {
+  if (feature.includes('Encrypted') || feature.includes('storage')) return Lock;
+  if (feature.includes('3-tap') || feature.includes('quick')) return Zap;
+  if (feature.includes('offline')) return Smartphone;
+  if (feature.includes('Drive') || feature.includes('backup')) return Cloud;
+  return null;
+};
 ---
 
 <div class="app-card">
@@ -25,14 +36,17 @@ const { icon, name, category, features, description, storeLink, status, isPlaceh
     {description && <p>{description}</p>}
 
     {features && features.length > 0 && (
-        <p>
-            {features.map((feature, index) => (
-                <Fragment key={index}>
-                    {feature}
-                    {index < features.length - 1 && <br />}
-                </Fragment>
-            ))}
-        </p>
+        <div class="features-list">
+            {features.map((feature, index) => {
+                const IconComponent = getFeatureIcon(feature);
+                return (
+                    <div class="feature-item" key={index}>
+                        {IconComponent && <IconComponent size={16} class="feature-icon" />}
+                        <span>{feature}</span>
+                    </div>
+                );
+            })}
+        </div>
     )}
 
     {storeLink ? (
