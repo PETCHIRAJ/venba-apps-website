@@ -248,6 +248,23 @@ footer a {
     margin: 0 10px;
 }
 
+.footer-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #2980b9;
+    transform: translateY(-1px);
+}
+
+.separator {
+    margin: 0 8px;
+    color: #bdc3c7;
+}
+
 /* Data deletion page specific styles */
 .method-box, .request-box, .manual-request {
     background: #f5f5f5;
@@ -348,12 +365,14 @@ footer a {
 }
 
 .contact-icon {
-    font-size: 1.2em;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
+    color: #3498db;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover .contact-icon {
+    color: #2980b9;
+    transform: scale(1.1);
 }
 
 /* Mobile Responsive */
@@ -391,6 +410,18 @@ footer a {
     footer a {
         margin: 0 5px;
         white-space: nowrap;
+    }
+
+    .footer-link span {
+        display: none;
+    }
+
+    .footer-link {
+        margin: 0 8px;
+    }
+
+    .separator {
+        display: none;
     }
     
     /* Hide separator pipes on mobile for cleaner look */

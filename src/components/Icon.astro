@@ -1,0 +1,51 @@
+---
+export interface Props {
+  name: 'mail' | 'smartphone' | 'file-text' | 'external-link' | 'home' | 'user' | 'shield' | 'book';
+  size?: number;
+  class?: string;
+}
+
+const { name, size = 20, class: className = '' } = Astro.props;
+
+// Import icons dynamically based on name
+let IconComponent;
+switch (name) {
+  case 'mail':
+    const { Mail } = await import('lucide-astro');
+    IconComponent = Mail;
+    break;
+  case 'smartphone':
+    const { Smartphone } = await import('lucide-astro');
+    IconComponent = Smartphone;
+    break;
+  case 'file-text':
+    const { FileText } = await import('lucide-astro');
+    IconComponent = FileText;
+    break;
+  case 'external-link':
+    const { ExternalLink } = await import('lucide-astro');
+    IconComponent = ExternalLink;
+    break;
+  case 'home':
+    const { Home } = await import('lucide-astro');
+    IconComponent = Home;
+    break;
+  case 'user':
+    const { User } = await import('lucide-astro');
+    IconComponent = User;
+    break;
+  case 'shield':
+    const { Shield } = await import('lucide-astro');
+    IconComponent = Shield;
+    break;
+  case 'book':
+    const { Book } = await import('lucide-astro');
+    IconComponent = Book;
+    break;
+  default:
+    const { Circle } = await import('lucide-astro');
+    IconComponent = Circle;
+}
+---
+
+<IconComponent size={size} class={className} />

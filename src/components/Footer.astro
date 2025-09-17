@@ -1,14 +1,30 @@
 ---
 // Footer component - reusable across all pages
+import { Home, Shield, FileText, Trash2 } from 'lucide-astro';
 const currentYear = new Date().getFullYear();
 ---
 
 <footer>
     <nav>
-        <a href="/">Home</a> |
-        <a href="/privacy">Privacy Policy</a> |
-        <a href="/terms">Terms of Service</a> |
-        <a href="/data-deletion">Data Deletion</a>
+        <a href="/" class="footer-link">
+            <Home size={16} />
+            <span>Home</span>
+        </a>
+        <span class="separator">|</span>
+        <a href="/privacy" class="footer-link">
+            <Shield size={16} />
+            <span>Privacy Policy</span>
+        </a>
+        <span class="separator">|</span>
+        <a href="/terms" class="footer-link">
+            <FileText size={16} />
+            <span>Terms of Service</span>
+        </a>
+        <span class="separator">|</span>
+        <a href="/data-deletion" class="footer-link">
+            <Trash2 size={16} />
+            <span>Data Deletion</span>
+        </a>
     </nav>
     <p>&copy; {currentYear} Venba Apps. All rights reserved.</p>
 </footer>
