@@ -5,8 +5,8 @@ export interface Props {
 }
 
 const {
-  title = 'Venba Apps - Simple, Useful Mobile Applications',
-  description = 'Building simple and useful mobile apps for everyday needs. Finance, productivity, education, and more.'
+  title = 'Venba Apps - Venba Dev Mobile Applications Portfolio',
+  description = 'Venba Apps by Venba Dev - Privacy-focused mobile applications including expense trackers, productivity tools, and educational apps. Building simple, useful apps for everyday needs.'
 } = Astro.props;
 ---
 
@@ -17,6 +17,8 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title}</title>
     <meta name="description" content={description}>
+    <meta name="keywords" content="Venba Apps, Venba Dev, Venba Developer, mobile apps, Privacy Expense Manager, expense tracker app, Android apps, privacy-focused apps">
+    <meta name="author" content="Venba Dev">
     <link rel="canonical" href={`https://apps.venba.dev${Astro.url.pathname}`}>
 
     <!-- Open Graph / Social Media Meta Tags -->
@@ -35,6 +37,29 @@ const {
     <link rel="icon" type="image/png" href="/images/brand_icon.png">
     <link rel="apple-touch-icon" href="/images/brand_icon.png">
     <link rel="stylesheet" href="/style.css">
+
+    <!-- Structured Data for Venba Apps / Venba Dev -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Venba Apps",
+        "alternateName": ["Venba Dev", "Venba Developer"],
+        "url": "https://apps.venba.dev",
+        "logo": "https://apps.venba.dev/images/brand_icon.png",
+        "description": "Venba Apps develops privacy-focused mobile applications for Android",
+        "email": "contact.venbaapps@gmail.com",
+        "sameAs": [
+            "https://play.google.com/store/apps/dev?id=8464608221563186460"
+        ],
+        "founder": {
+            "@type": "Person",
+            "name": "Venba Dev"
+        }
+    }
+    </script>
+
+    <slot name="head" />
 </head>
 <body>
     <div class="container">

@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://apps.venba.dev/sitemap.xml
