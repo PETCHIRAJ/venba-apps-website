@@ -16,6 +16,21 @@
       "status": "available"
     },
     {
+      "id": "home-loan-calculator",
+      "name": "Save Lakhs - Home Loan Calculator",
+      "category": "Finance",
+      "icon": "/images/home-loan-calculator-icon.svg",
+      "description": "Free home loan calculators for India:",
+      "features": [
+        "EMI & prepayment calculators",
+        "Tax benefits calculator",
+        "Compare 15+ bank rates",
+        "Save ₹5-25 lakhs strategies"
+      ],
+      "storeLink": "https://savelakhs.venba.dev",
+      "status": "available"
+    },
+    {
       "id": "coming-soon",
       "name": "More Apps Coming Soon",
       "category": "Finance & Productivity",
