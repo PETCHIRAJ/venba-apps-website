@@ -1,5 +1,5 @@
 ---
-import { Lock, Zap, Smartphone, Cloud } from 'lucide-astro';
+import { Lock, Zap, Smartphone, Cloud, Calculator, Receipt, TrendingUp, PiggyBank } from 'lucide-astro';
 
 export interface Props {
   icon: string;
@@ -16,12 +16,24 @@ const { icon, name, category, features, description, storeLink, status, isPlaceh
 
 // Map feature text to icons
 const getFeatureIcon = (feature: string) => {
+  // Privacy Expense Manager icons
   if (feature.includes('Encrypted') || feature.includes('storage')) return Lock;
   if (feature.includes('3-tap') || feature.includes('quick')) return Zap;
   if (feature.includes('offline')) return Smartphone;
   if (feature.includes('Drive') || feature.includes('backup')) return Cloud;
+
+  // Home Loan Calculator icons
+  if (feature.includes('EMI') || feature.includes('prepayment') || feature.includes('calculator')) return Calculator;
+  if (feature.includes('Tax') || feature.includes('benefits')) return Receipt;
+  if (feature.includes('Compare') || feature.includes('bank') || feature.includes('rates')) return TrendingUp;
+  if (feature.includes('Save') || feature.includes('lakhs') || feature.includes('strategies')) return PiggyBank;
+
   return null;
 };
+
+// Determine button text based on link type
+const isWebApp = storeLink && !storeLink.includes('play.google.com');
+const buttonText = isWebApp ? 'Visit Website' : 'Available on Google Play Store';
 ---
 
 <div class="app-card">
@@ -31,7 +43,7 @@ const getFeatureIcon = (feature: string) => {
         <img src={icon} alt={name} class="app-icon">
     )}
     <h3>{name}</h3>
-    <p class="category">{category}</p>
+    {!isPlaceholder && <p class="category">{category}</p>}
 
     {description && <p>{description}</p>}
 
@@ -52,12 +64,12 @@ const getFeatureIcon = (feature: string) => {
     {storeLink ? (
         <a href={storeLink} target="_blank" rel="noopener noreferrer" class="app-store-link">
             <p class={`status ${status}`}>
-                {status === 'available' ? 'Available on Google Play Store' : 'Coming Soon'}
+                {status === 'available' ? buttonText : 'Coming Soon'}
             </p>
         </a>
     ) : (
         <p class={`status ${status}`}>
-            {status === 'available' ? 'Available on Google Play Store' : 'Coming Soon'}
+            {status === 'available' ? buttonText : 'Coming Soon'}
         </p>
     )}
 </div>
