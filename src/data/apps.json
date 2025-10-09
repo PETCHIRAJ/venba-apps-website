@@ -2,7 +2,7 @@
   "apps": [
     {
       "id": "privacy-expense-manager",
-      "name": "Privacy Expense Manager",
+      "name": "Privacy Expense Tracker",
       "category": "Finance",
       "icon": "/images/privacy-expense-manager-icon.png",
       "description": "Privacy-first expense tracking:",
