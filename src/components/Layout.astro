@@ -59,6 +59,29 @@ const {
     }
     </script>
 
+    <!-- Firebase Analytics -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-analytics.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyD4tI9OQIyGfg_ZhaJunOpzHgCjgJz29BU",
+            authDomain: "venba-apps.firebaseapp.com",
+            databaseURL: "https://venba-apps-default-rtdb.firebaseio.com",
+            projectId: "venba-apps",
+            storageBucket: "venba-apps.firebasestorage.app",
+            messagingSenderId: "663923344955",
+            appId: "1:663923344955:web:5bd49e90f42135d3dd3e1e",
+            measurementId: "G-C6S1XKRW12"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
     <slot name="head" />
 </head>
 <body>
