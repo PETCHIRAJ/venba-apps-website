@@ -46,6 +46,21 @@
       "status": "available"
     },
     {
+      "id": "tn-pension-calc",
+      "name": "TN Pension Calculator (TAPS 2026)",
+      "category": "Finance",
+      "icon": "/images/brand_icon.png",
+      "description": "Tamil Nadu government pension calculator:",
+      "features": [
+        "CPS vs TAPS pension comparison",
+        "Gratuity & corpus projection",
+        "Bilingual Tamil/English",
+        "100% free & offline"
+      ],
+      "storeLink": "https://calc.venba.dev/tn-pension/",
+      "status": "available"
+    },
+    {
       "id": "coming-soon",
       "name": "More Apps Coming Soon",
       "category": "Finance & Productivity",
