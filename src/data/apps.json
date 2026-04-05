@@ -1,6 +1,21 @@
 {
   "apps": [
     {
+      "id": "yojana-calc",
+      "name": "YojanaCalc - योजना कैल्क",
+      "category": "Finance",
+      "icon": "/images/yojana-calc-icon.png",
+      "description": "Government scheme calculators for India:",
+      "features": [
+        "7+ schemes (EPF, PM Kisan, Ayushman, NPS, PMAY, SSY, APY)",
+        "Bilingual EN/HI support",
+        "100% free & accurate",
+        "SEO-optimized for Hindi searches"
+      ],
+      "storeLink": "https://yojanacalc.in",
+      "status": "available"
+    },
+    {
       "id": "privacy-expense-manager",
       "name": "Privacy Expense Tracker",
       "category": "Finance",
@@ -28,21 +43,6 @@
         "Save ₹5-25 lakhs strategies"
       ],
       "storeLink": "https://savelakhs.venba.dev",
-      "status": "available"
-    },
-    {
-      "id": "yojana-calc",
-      "name": "YojanaCalc - योजना कैल्क",
-      "category": "Finance",
-      "icon": "/images/yojana-calc-icon.png",
-      "description": "Government scheme calculators for India:",
-      "features": [
-        "7+ schemes (EPF, PM Kisan, Ayushman, NPS, PMAY, SSY, APY)",
-        "Bilingual EN/HI support",
-        "100% free & accurate",
-        "SEO-optimized for Hindi searches"
-      ],
-      "storeLink": "https://yojanacalc.in",
       "status": "available"
     },
     {
