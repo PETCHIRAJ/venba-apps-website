@@ -16,6 +16,21 @@
       "status": "available"
     },
     {
+      "id": "gold-rate-today",
+      "name": "Gold Rate Today",
+      "category": "Finance",
+      "icon": "/images/gold-rate-icon.svg",
+      "description": "Live gold prices for India:",
+      "features": [
+        "Live 22K & 24K rates (IBJA)",
+        "5-year trend charts",
+        "True cost breakdown (making + GST)",
+        "Free & updated daily"
+      ],
+      "storeLink": "https://gold-rate.venba.dev",
+      "status": "available"
+    },
+    {
       "id": "privacy-expense-manager",
       "name": "Privacy Expense Tracker",
       "category": "Finance",

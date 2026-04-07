@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Amber background fills full 100x100 for maskable safe zone -->
+  <rect width="100" height="100" fill="#F59E0B" rx="16"/>
+  <!-- Gem centered within safe zone (20–80px = 60×60 area, 20% padding each side) -->
+  <!-- Original gem is 24×24 viewBox, scaled 2.5× and offset to (20,20) -->
+  <g transform="translate(12,12) scale(3.17)">
+    <path d="M6 3h12l4 6-10 13L2 9Z" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="#FBBF24"/>
+    <path d="M11 3 8 9l4 13 4-13-3-6" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M2 9h20" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>
