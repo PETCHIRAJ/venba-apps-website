@@ -1,5 +1,5 @@
 ---
-import { Lock, Zap, Smartphone, Cloud, Calculator, Receipt, TrendingUp, PiggyBank } from 'lucide-astro';
+import { Lock, Zap, Smartphone, Cloud, Calculator, Receipt, TrendingUp, PiggyBank, Globe, BadgeCheck, BookOpen, Gem, Scale } from 'lucide-astro';
 
 export interface Props {
   icon: string;
@@ -25,8 +25,25 @@ const getFeatureIcon = (feature: string) => {
   // Home Loan Calculator icons
   if (feature.includes('EMI') || feature.includes('prepayment') || feature.includes('calculator')) return Calculator;
   if (feature.includes('Tax') || feature.includes('benefits')) return Receipt;
-  if (feature.includes('Compare') || feature.includes('bank') || feature.includes('rates')) return TrendingUp;
+  if (feature.includes('Compare') || feature.includes('bank')) return TrendingUp;
   if (feature.includes('Save') || feature.includes('lakhs') || feature.includes('strategies')) return PiggyBank;
+
+  // Gold Rate Today icons
+  if (feature.includes('rates') || feature.includes('trend') || feature.includes('returns')) return TrendingUp;
+  if (feature.includes('cost breakdown') || feature.includes('GST') || feature.includes('making')) return Receipt;
+  if (feature.includes('guides') || feature.includes('city')) return BookOpen;
+  if (feature.includes('gold') || feature.includes('22K') || feature.includes('24K')) return Gem;
+
+  // YojanaCalc icons
+  if (feature.includes('schemes') || feature.includes('EPF') || feature.includes('free & accurate')) return Calculator;
+  if (feature.includes('Bilingual') || feature.includes('EN/HI') || feature.includes('Tamil') || feature.includes('English')) return Globe;
+  if (feature.includes('free & accurate') || feature.includes('accurate')) return BadgeCheck;
+  if (feature.includes('SEO') || feature.includes('Hindi searches')) return TrendingUp;
+
+  // TN Pension icons
+  if (feature.includes('pension') || feature.includes('CPS') || feature.includes('TAPS') || feature.includes('comparison')) return Scale;
+  if (feature.includes('Gratuity') || feature.includes('corpus') || feature.includes('projection')) return PiggyBank;
+  if (feature.includes('free & offline') || feature.includes('100% free')) return BadgeCheck;
 
   return null;
 };
