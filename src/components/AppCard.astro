@@ -29,13 +29,13 @@ const getFeatureIcon = (feature: string) => {
   if (feature.includes('Save') || feature.includes('lakhs') || feature.includes('strategies')) return PiggyBank;
 
   // Gold Rate Today icons
+  if (feature.includes('guides') || feature.includes('city')) return BookOpen;
   if (feature.includes('rates') || feature.includes('trend') || feature.includes('returns')) return TrendingUp;
   if (feature.includes('cost breakdown') || feature.includes('GST') || feature.includes('making')) return Receipt;
-  if (feature.includes('guides') || feature.includes('city')) return BookOpen;
   if (feature.includes('gold') || feature.includes('22K') || feature.includes('24K')) return Gem;
 
   // YojanaCalc icons
-  if (feature.includes('schemes') || feature.includes('EPF') || feature.includes('free & accurate')) return Calculator;
+  if (feature.includes('schemes') || feature.includes('EPF')) return Calculator;
   if (feature.includes('Bilingual') || feature.includes('EN/HI') || feature.includes('Tamil') || feature.includes('English')) return Globe;
   if (feature.includes('free & accurate') || feature.includes('accurate')) return BadgeCheck;
   if (feature.includes('SEO') || feature.includes('Hindi searches')) return TrendingUp;
