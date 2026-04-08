@@ -23,9 +23,9 @@
       "description": "Live gold prices for India:",
       "features": [
         "Live 22K & 24K rates (IBJA)",
-        "5-year trend charts",
+        "5-year trend charts & returns",
         "True cost breakdown (making + GST)",
-        "Free & updated daily"
+        "6 city rates + 6 gold buying guides"
       ],
       "storeLink": "https://gold-rate.venba.dev",
       "status": "available"
