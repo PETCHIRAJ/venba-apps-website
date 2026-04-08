@@ -241,7 +241,7 @@ a:hover {
 
 .feature-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 8px;
     margin-bottom: 8px;
     font-size: 0.95em;
@@ -251,6 +251,7 @@ a:hover {
 .feature-icon {
     color: #3498db;
     flex-shrink: 0;
+    margin-top: 2px;
 }
 
 footer {
