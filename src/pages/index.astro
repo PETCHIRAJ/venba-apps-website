@@ -10,10 +10,6 @@ import { Mail, Smartphone, FileText } from 'lucide-astro';
 <Layout>
     <Header />
 
-    <section class="hero">
-        <p class="hero-text">I build apps and tools that solve real financial problems<br/>with simple, intuitive designs.</p>
-    </section>
-
     <section class="apps">
         <div class="app-grid">
             {appsData.apps.map((app) => (
@@ -25,7 +21,7 @@ import { Mail, Smartphone, FileText } from 'lucide-astro';
                     features={app.features}
                     storeLink={app.storeLink}
                     status={app.status as 'available' | 'coming-soon'}
-                    isPlaceholder={app.isPlaceholder}
+                    accentColor={app.accentColor}
                 />
             ))}
         </div>
@@ -33,9 +29,7 @@ import { Mail, Smartphone, FileText } from 'lucide-astro';
 
     <section class="about-contact">
         <div class="about-content">
-            <h2>About the Developer</h2>
-            <p>Solo developer building web apps and mobile apps that make daily financial tasks easier. I believe in simple design, user privacy, and practical functionality.</p>
-            <p>My tools feature local language support and are designed for India — covering finance, government schemes, and everyday needs.</p>
+            <p>Solo developer building free finance tools for India — simple design, local language support, and user privacy first.</p>
         </div>
 
         <div class="contact-links">

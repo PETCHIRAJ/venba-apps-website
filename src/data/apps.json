@@ -3,14 +3,14 @@
     {
       "id": "yojana-calc",
       "name": "YojanaCalc - योजना कैल्क",
-      "category": "Finance",
+      "category": "Govt Schemes",
+      "accentColor": "#f97316",
       "icon": "/images/yojana-calc-icon.png",
-      "description": "Government scheme calculators for India:",
+      "description": "Government scheme calculators for India",
       "features": [
         "7+ schemes (EPF, PM Kisan, Ayushman, NPS, PMAY, SSY, APY)",
         "Bilingual EN/HI support",
-        "100% free & accurate",
-        "SEO-optimized for Hindi searches"
+        "100% free & accurate"
       ],
       "storeLink": "https://yojanacalc.in",
       "status": "available"
@@ -18,14 +18,14 @@
     {
       "id": "gold-rate-today",
       "name": "Gold Rate Today",
-      "category": "Finance",
+      "category": "Gold & Jewellery",
+      "accentColor": "#f59e0b",
       "icon": "/images/gold-rate-icon.svg",
-      "description": "Live gold prices for India:",
+      "description": "Live gold prices for India",
       "features": [
         "Live 22K & 24K rates (IBJA)",
         "5-year trend charts & returns",
-        "True cost breakdown (making + GST)",
-        "6 city rates + 6 gold buying guides"
+        "True cost breakdown (making + GST)"
       ],
       "storeLink": "https://gold-rate.venba.dev",
       "status": "available"
@@ -33,14 +33,14 @@
     {
       "id": "privacy-expense-manager",
       "name": "Privacy Expense Tracker",
-      "category": "Finance",
+      "category": "Expense Tracker",
+      "accentColor": "#14b8a6",
       "icon": "/images/privacy-expense-manager-icon.png",
-      "description": "Privacy-first expense tracking:",
+      "description": "Privacy-first expense tracking",
       "features": [
         "Encrypted storage",
         "3-tap quick entry",
-        "100% offline",
-        "Google Drive backup"
+        "100% offline"
       ],
       "storeLink": "https://play.google.com/store/apps/details?id=com.venba.privacy_expense_manager",
       "status": "available"
@@ -48,14 +48,14 @@
     {
       "id": "home-loan-calculator",
       "name": "Save Lakhs - Home Loan Calculator",
-      "category": "Finance",
+      "category": "Home Loan",
+      "accentColor": "#3b82f6",
       "icon": "/images/home-loan-calculator-icon.svg",
-      "description": "Free home loan calculators for India:",
+      "description": "Free home loan calculators for India",
       "features": [
         "EMI & prepayment calculators",
         "Tax benefits calculator",
-        "Compare 15+ bank rates",
-        "Save ₹5-25 lakhs strategies"
+        "Compare 15+ bank rates"
       ],
       "storeLink": "https://savelakhs.venba.dev",
       "status": "available"
@@ -63,28 +63,17 @@
     {
       "id": "tn-pension-calc",
       "name": "TN Pension Calculator (TAPS 2026)",
-      "category": "Finance",
+      "category": "Pension",
+      "accentColor": "#8b5cf6",
       "icon": "/images/brand_icon.png",
-      "description": "Tamil Nadu government pension calculator:",
+      "description": "Tamil Nadu government pension calculator",
       "features": [
         "CPS vs TAPS pension comparison",
         "Gratuity & corpus projection",
-        "Bilingual Tamil/English",
-        "100% free & offline"
+        "Bilingual Tamil/English"
       ],
       "storeLink": "https://calc.venba.dev/tn-pension/",
       "status": "available"
-    },
-    {
-      "id": "coming-soon",
-      "name": "More Apps Coming Soon",
-      "category": "Finance & Productivity",
-      "icon": "",
-      "description": "Working on exciting new apps to simplify your daily life. Stay tuned for updates!",
-      "features": [],
-      "storeLink": null,
-      "status": "coming-soon",
-      "isPlaceholder": true
     }
   ]
 }

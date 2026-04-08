@@ -10,9 +10,10 @@ export interface Props {
   storeLink?: string | null;
   status: 'available' | 'coming-soon';
   isPlaceholder?: boolean;
+  accentColor?: string;
 }
 
-const { icon, name, category, features, description, storeLink, status, isPlaceholder = false } = Astro.props;
+const { icon, name, category, features, description, storeLink, status, isPlaceholder = false, accentColor = '#3498db' } = Astro.props;
 
 // Map feature text to icons
 const getFeatureIcon = (feature: string) => {
@@ -50,43 +51,47 @@ const getFeatureIcon = (feature: string) => {
 
 // Determine button text based on link type
 const isWebApp = storeLink && !storeLink.includes('play.google.com');
-const buttonText = isWebApp ? 'Visit the app' : 'Available on Google Play Store';
+const ctaLabel = isWebApp ? 'Visit →' : 'Install →';
 ---
 
-<div class="app-card">
+<div class="app-card" style={`--accent: ${accentColor}`}>
     {isPlaceholder ? (
         <div class="placeholder-icon">🚀</div>
     ) : (
         <img src={icon} alt={name} class="app-icon">
     )}
-    <h3>{name}</h3>
-    {!isPlaceholder && <p class="category">{category}</p>}
 
-    {description && <p>{description}</p>}
-
-    {features && features.length > 0 && (
-        <div class="features-list">
-            {features.map((feature, index) => {
-                const IconComponent = getFeatureIcon(feature);
-                return (
-                    <div class="feature-item" key={index}>
-                        {IconComponent && <IconComponent size={16} class="feature-icon" />}
-                        <span>{feature}</span>
-                    </div>
-                );
-            })}
+    <div class="app-card-body">
+        <div class="app-card-top">
+            <div>
+                <h3>{name}</h3>
+                {!isPlaceholder && <p class="category" style={`color: ${accentColor}`}>{category}</p>}
+            </div>
+            {storeLink ? (
+                <a href={storeLink} target="_blank" rel="noopener noreferrer" class="app-store-link">
+                    <span class={`status ${status}`}>
+                        {status === 'available' ? ctaLabel : 'Coming Soon'}
+                    </span>
+                </a>
+            ) : (
+                <span class={`status ${status}`}>Coming Soon</span>
+            )}
         </div>
-    )}
 
-    {storeLink ? (
-        <a href={storeLink} target="_blank" rel="noopener noreferrer" class="app-store-link">
-            <p class={`status ${status}`}>
-                {status === 'available' ? buttonText : 'Coming Soon'}
-            </p>
-        </a>
-    ) : (
-        <p class={`status ${status}`}>
-            {status === 'available' ? buttonText : 'Coming Soon'}
-        </p>
-    )}
+        {description && <p class="app-description">{description}</p>}
+
+        {features && features.length > 0 && (
+            <div class="features-list">
+                {features.map((feature) => {
+                    const IconComponent = getFeatureIcon(feature);
+                    return (
+                        <div class="feature-item">
+                            {IconComponent && <IconComponent size={14} class="feature-icon" />}
+                            <span>{feature}</span>
+                        </div>
+                    );
+                })}
+            </div>
+        )}
+    </div>
 </div>
