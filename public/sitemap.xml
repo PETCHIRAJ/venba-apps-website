@@ -7,24 +7,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://apps.venba.dev/privacy</loc>
-    <lastmod>2025-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apps.venba.dev/terms</loc>
-    <lastmod>2025-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://apps.venba.dev/data-deletion</loc>
-    <lastmod>2025-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://apps.venba.dev/privacy-expense-manager</loc>
     <lastmod>2025-10-07</lastmod>
     <changefreq>monthly</changefreq>
